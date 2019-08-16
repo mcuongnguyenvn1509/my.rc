@@ -10,15 +10,24 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+"-----------------------
+" use copen and ccl to open and close the fix-window
+"-----------------------
 " bind \ (backward slash) to grep shortcut
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
 
-noremap <F3> :set invnumber<CR>
+
+"-----------------------
+" use copen and ccl to open and close the fix-window
+" F8 to search the word at the cursor with vimgrep
+"-----------------------
 nnoremap <F8> :vimgrep /<c-r>=expand("<cword>")<cr>/ %<CR>:copen 22<CR>
 map <F5> :cp!<CR>
 map <F6> :cn!<CR>
 
+
+noremap <F3> :set invnumber<CR>
 
 set hlsearch     " highlight search word
 set incsearch    " show match while typing
