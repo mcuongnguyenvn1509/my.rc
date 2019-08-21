@@ -13,6 +13,9 @@ Afterwards, you can use:
     git diff --staged to check that you staged the correct changes
     git reset -p to unstage mistakenly added hunks
     git commit -v to view your commit while you edit the commit message.
-
+    git commit --ammend -m "" -m ""
+    
 Source from: https://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git/31649973
 #--------------------
+
+git config core.editor "vim"
