@@ -1,0 +1,19 @@
+-------------------------------------------------
+After do the command $sudo apt-get remove bash
+And got failed when reinstall
+-------------------------------------------------
+
+Download iso file in the below link:
+https://downloads.sourceforge.net/gparted/gparted-live-1.0.0-3-amd64.iso
+
+mount this iso to the virtual machin in virtualbox
+
+reboot with reccure boot
+
+fix some issue with gui
+---------------------------------
+sudo apt install --reinstall bash
+
+dpkg --list | grep desktop
+
+sudo apt install -y ubuntu-desktop
