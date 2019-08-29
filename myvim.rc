@@ -1,3 +1,5 @@
+Useful package from vim expert: https://github.com/amix/vimrc
+
 " The Silver Searcher
 if executable('ag')
   " Use ag over grep
