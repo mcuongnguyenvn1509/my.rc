@@ -1,2 +1,12 @@
 sudo apt-get remove git
 sudo apt-get install git
+
+--------------------------------
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = blue
+  remote = green
+  
+-------------------------------
