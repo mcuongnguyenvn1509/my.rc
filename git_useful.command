@@ -19,3 +19,6 @@ Source from: https://stackoverflow.com/questions/1085162/commit-only-part-of-a-f
 #--------------------
 
 git config core.editor "vim"
+
+#-------------------
+alias lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
