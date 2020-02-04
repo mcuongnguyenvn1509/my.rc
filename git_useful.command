@@ -1,4 +1,10 @@
 #--------------------
+To use git grep with un-wrap
+
+GIT_PAGER="less -S"
+export GIT_PAGER
+
+#--------------------
 Commit only part of a file in Git
 
 #git add --patch 
